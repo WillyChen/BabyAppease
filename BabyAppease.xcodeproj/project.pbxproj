@@ -10,6 +10,7 @@
 		3F489516176DF845008AE05B /* hair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F489513176DF845008AE05B /* hair.jpg */; };
 		3F489517176DF845008AE05B /* shavers.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F489514176DF845008AE05B /* shavers.png */; };
 		3F489518176DF845008AE05B /* vaccum.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F489515176DF845008AE05B /* vaccum.png */; };
+		3F48951A176DF96B008AE05B /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = 3F489519176DF96B008AE05B /* Sound */; };
 		3F6E23E81769634F00CA1E9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6E23E71769634F00CA1E9E /* UIKit.framework */; };
 		3F6E23EA1769634F00CA1E9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6E23E91769634F00CA1E9E /* Foundation.framework */; };
 		3F6E23EC1769634F00CA1E9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6E23EB1769634F00CA1E9E /* CoreGraphics.framework */; };
@@ -27,6 +28,7 @@
 		3F489513176DF845008AE05B /* hair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hair.jpg; sourceTree = "<group>"; };
 		3F489514176DF845008AE05B /* shavers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shavers.png; sourceTree = "<group>"; };
 		3F489515176DF845008AE05B /* vaccum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vaccum.png; sourceTree = "<group>"; };
+		3F489519176DF96B008AE05B /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
 		3F6E23E41769634F00CA1E9E /* BabyAppease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyAppease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6E23E71769634F00CA1E9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3F6E23E91769634F00CA1E9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,7 @@
 		3F6E23ED1769634F00CA1E9E /* BabyAppease */ = {
 			isa = PBXGroup;
 			children = (
+				3F489519176DF96B008AE05B /* Sound */,
 				3F489513176DF845008AE05B /* hair.jpg */,
 				3F489514176DF845008AE05B /* shavers.png */,
 				3F489515176DF845008AE05B /* vaccum.png */,
@@ -175,6 +178,7 @@
 				3F489516176DF845008AE05B /* hair.jpg in Resources */,
 				3F489517176DF845008AE05B /* shavers.png in Resources */,
 				3F489518176DF845008AE05B /* vaccum.png in Resources */,
+				3F48951A176DF96B008AE05B /* Sound in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
