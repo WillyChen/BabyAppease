@@ -1,26 +1,170 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NE-au-xTI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="SSs-iP-0P2"/>
+                                    <constraint firstAttribute="width" constant="100" id="law-cF-FZk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="bags">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HL3-9K-Jxa" kind="modal" id="oN1-C7-3MD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHe-FD-H58">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9b4-2D-Zd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="shavers" image="shavers.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HL3-9K-Jxa" kind="modal" id="pMS-ud-b5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utX-1B-ypF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Qvm-1y-FWD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                <state key="normal" title="vacuum cleaner" image="vaccum.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HL3-9K-Jxa" kind="modal" id="vMh-RW-rRm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu6-e4-5d7">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Hair Dryer" image="hair.jpg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HL3-9K-Jxa" kind="modal" id="lNa-f1-YE1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3My-Yu-Jku">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="utX-1B-ypF" firstAttribute="leading" secondItem="6NE-au-xTI" secondAttribute="leading" type="default" id="40b-cY-vQd"/>
+                            <constraint firstItem="nu6-e4-5d7" firstAttribute="bottom" secondItem="utX-1B-ypF" secondAttribute="bottom" type="default" id="4mr-bn-xXL"/>
+                            <constraint firstItem="utX-1B-ypF" firstAttribute="trailing" secondItem="6NE-au-xTI" secondAttribute="trailing" type="default" id="BgJ-qf-hkC"/>
+                            <constraint firstItem="3My-Yu-Jku" firstAttribute="leading" secondItem="utX-1B-ypF" secondAttribute="leading" type="default" id="GLu-Wb-LO6"/>
+                            <constraint firstItem="6NE-au-xTI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="30" id="RZo-3i-W6B"/>
+                            <constraint firstItem="utX-1B-ypF" firstAttribute="top" secondItem="3" secondAttribute="top" constant="150" id="SDw-lW-LYF"/>
+                            <constraint firstItem="nu6-e4-5d7" firstAttribute="top" secondItem="utX-1B-ypF" secondAttribute="top" type="default" id="crC-wB-jfL"/>
+                            <constraint firstItem="AHe-FD-H58" firstAttribute="bottom" secondItem="6NE-au-xTI" secondAttribute="bottom" type="default" id="flw-Y2-vdk"/>
+                            <constraint firstItem="6NE-au-xTI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="30" id="iAY-gZ-idm"/>
+                            <constraint firstAttribute="trailing" secondItem="AHe-FD-H58" secondAttribute="trailing" constant="30" id="iBC-mV-AwA"/>
+                            <constraint firstAttribute="bottom" secondItem="3My-Yu-Jku" secondAttribute="bottom" constant="223" id="iwC-uq-5mQ"/>
+                            <constraint firstItem="AHe-FD-H58" firstAttribute="top" secondItem="6NE-au-xTI" secondAttribute="top" type="default" id="jEn-dL-LiF"/>
+                            <constraint firstItem="nu6-e4-5d7" firstAttribute="leading" secondItem="AHe-FD-H58" secondAttribute="leading" type="default" id="mfG-Eb-8bP"/>
+                            <constraint firstItem="nu6-e4-5d7" firstAttribute="trailing" secondItem="AHe-FD-H58" secondAttribute="trailing" type="default" id="yiS-xJ-K6A"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uVn-0N-Ihx">
+            <objects>
+                <viewController id="HL3-9K-Jxa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EO-pr-pCU">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvX-oN-T1z">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="start">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8z-Wx-eKi">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="stop">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qvX-oN-T1z" firstAttribute="top" secondItem="5EO-pr-pCU" secondAttribute="top" constant="105" id="09f-oV-Xer"/>
+                            <constraint firstItem="qvX-oN-T1z" firstAttribute="leading" secondItem="5EO-pr-pCU" secondAttribute="leading" constant="81" id="5R7-vq-zm7"/>
+                            <constraint firstAttribute="trailing" secondItem="S8z-Wx-eKi" secondAttribute="trailing" constant="81" id="Od1-vx-NHq"/>
+                            <constraint firstItem="S8z-Wx-eKi" firstAttribute="baseline" secondItem="qvX-oN-T1z" secondAttribute="baseline" type="default" id="oD2-Qr-tdo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bm5-VT-E42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="40"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="hair.jpg" width="1000" height="1000"/>
+        <image name="shavers.png" width="800" height="800"/>
+        <image name="vaccum.png" width="435" height="484"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="vMh-RW-rRm"/>
+    </inferredMetricsTieBreakers>
 </document>
